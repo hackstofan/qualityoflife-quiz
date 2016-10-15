@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@light-gray: #fdfdfd;
+@dark-gray: #222222;
+
+html, body, main {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-fixed {
+    min-height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#welcome {
+    position: relative;
+    background: url('../img/europe.jpg');
+    color: @light-gray;
+    
+    .title {
+        position: absolute;
+	top: 32%;
+	width: 100%;
+    	text-align: center;
+
+	h1 {
+	    text-transform: uppercase;
+	    text-shadow: 2px 2px lighten(@dark-gray, 10%);
+    	    font-weight: bold;
+    	    font-size: 82px;
+        }
+
+	p {
+	    font-size: 22px;
+	    color: @dark-gray;
+	}
+   }
+}
