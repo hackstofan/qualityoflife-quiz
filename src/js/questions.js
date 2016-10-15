@@ -1,8 +1,5 @@
-sliders = document.getElementsByClassName('answer');
-
-for ( var i = 0; i < sliders.length; i++ ) {
-    console.log(sliders[i]);
-    noUiSlider.create(sliders[i], {
+$('.answer').each(function(idx, obj) {
+    noUiSlider.create(this, {
 	start: [ 5 ],
 	step: 1,
 	connect: [true, false],
@@ -11,5 +8,5 @@ for ( var i = 0; i < sliders.length; i++ ) {
 	    'max': 10
 	}
     });
-}
+});
 
