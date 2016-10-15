@@ -4,15 +4,23 @@
     
     {% for question in questions %}
     <div class="row">
-      <div class="category col-sm-12 col-lg-2 col- text-center">
+      <div data-category="{{ question.name }}" class="category col-sm-12 col-lg-2 col- text-center">
 	<h3>{{ question.short }}</h3>
       </div>
       <div class="question col-sm-12 col-lg-10">
-	<p>{{ question.text }}</p>
-	<div class="{{ question.name }} answer"></div>
+	<p class="text">{{ question.text }}</p>
+	<div data-category="{{ question.name }}" class="answer"></div>
       </div>
     </div>
     <hr/>
     {% endfor %}
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+	<button id="generate-results" class="btn btn-primary btn-lg">
+	  Sjá niðurstöður
+	</button>
+      </div>
+    </div>
   </div>
 </div>

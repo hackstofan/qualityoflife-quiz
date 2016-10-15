@@ -10,3 +10,12 @@ $('.answer').each(function(idx, obj) {
     });
 });
 
+$('#generate-results').click(function(event){
+    var results = {}
+    $('.answer').each(function(idx,obj) {
+	var category = $(obj).data('category');
+	var value = parseInt(this.noUiSlider.get());
+	results[category] = value;
+    });
+});
+

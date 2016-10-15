@@ -18,6 +18,10 @@ html, body, main {
     font-family: 'Montserrat', sans-serif;
 }
 
+.btn {
+    margin-bottom: 50px;
+}
+
 .bg-fixed {
     min-height: 100%;
     background-size: cover;
@@ -33,51 +37,117 @@ html, body, main {
     min-height: 100%;
 }
 
-.safety {
-    .noUi-connect {
-        background: @safety;
+.svg-bg-fill(@src, @fill-default, @fill-new) {
+    @escape-fill-default: escape(@fill-default);
+    @escape-fill-new: escape(@fill-new);
+    @data-uri: data-uri('image/svg+xml;charset=UTF-8', "@{src}");
+    @replace-src: replace("@{data-uri}", "@{escape-fill-default}", "@{escape-fill-new}");
+    background-image:e(@replace-src);
+}
+
+.category {
+    display: inline-block;
+    height: 144px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &[data-category="safety"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{safety}");
     }
- }
-.government {
-    .noUi-connect {
-        background: @government;
+    &[data-category="government"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{government}");
     }
- }
-.environment {
-    .noUi-connect {
-        background: @environment;
+    &[data-category="environment"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{environment}");
+     }
+    &[data-category="finance"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{finance}");
+     }
+    &[data-category="housing"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{housing}");
+     }
+    &[data-category="job"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{job}");
+     }
+    &[data-category="time"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{time}");
+     }
+    &[data-category="health"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{health}");
+     }
+    &[data-category="life"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{life}");
     }
- }
-.finance {
-    .noUi-connect {
-        background: @finance;
+
+    h3 {
+        margin: 0px;
+	padding: 0px;
+        line-height: 144px;
+        font-size: 16px;
+	color: #ffffff;
     }
- }
-.housing {
-    .noUi-connect {
-        background: @housing;
+}
+
+.question {
+    height: 144px;
+    
+    >.text {
+        font-size: 28px;
     }
- }
-.job {
-    .noUi-connect {
-        background: @job;
+}
+
+.answer {
+    .noUi-value {
+        padding-top: 2px;
     }
- }
-.time {
-    .noUi-connect {
-        background: @time;
+
+    &[data-category="safety"] {
+        .noUi-connect {
+            background: @safety;
+        }
+     }
+    &[data-category="government"] {
+        .noUi-connect {
+            background: @government;
+        }
+     }
+    &[data-category="environment"] {
+        .noUi-connect {
+            background: @environment;
+        }
+     }
+    &[data-category="finance"] {
+        .noUi-connect {
+            background: @finance;
+        }
+     }
+    &[data-category="housing"] {
+        .noUi-connect {
+            background: @housing;
+        }
+     }
+    &[data-category="job"] {
+        .noUi-connect {
+            background: @job;
+        }
+     }
+    &[data-category="time"] {
+        .noUi-connect {
+            background: @time;
+        }
+     }
+    &[data-category="health"] {
+        .noUi-connect {
+            background: @health;
+        }
+     }
+    &[data-category="life"] {
+        .noUi-connect {
+            background: @life;
+        }
     }
- }
-.health {
-    .noUi-connect {
-        background: @health;
-    }
- }
-.life {
-    .noUi-connect {
-        background: @life;
-    }
- }
+}
 
 #welcome {
     position: relative;
