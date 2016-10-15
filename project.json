@@ -1,4 +1,51 @@
 {
     "title": "Lífskjaravitinn",
-    "description": "Viltu vita hvernig þú upplifir lífsgæðin þín?"
+    "description": "Viltu vita hvernig þú upplifir lífsgæðin þín?",
+    "questions": [
+	{
+	    "name": "safety",
+	    "short": "Öryggi",
+	    "text": "Hversu örugg(ur) finnst þér þú vera við að labba ein(n) að nóttu til?"
+	},
+	{
+	    "name": "government",
+	    "short": "Stjórnsýslan",
+	    "text": "Hversu mikið traust berðu til Alþingis?"
+	},
+	{
+	    "name": "environment",
+	    "short": "Umhverfið",
+	    "text": "Hversu ánægð(ur) ertu með nánasta umhverfið þitt?"
+	},
+	{
+	    "name": "finance",
+	    "short": "Fjármál",
+	    "text": "Hversu ánægð(ur) ertu með peningana sem þú hefur milli handanna?"
+	},
+	{
+	    "name": "housing",
+	    "short": "Húsnæði",
+	    "text": "Hversu ánægð(ur) ertu með húsnæðið þitt?"
+	},
+	{
+	    "name": "job",
+	    "short": "Atvinna",
+	    "text": "Hversu ánægð(ur) ertu með starfið þitt?"
+	},
+	{
+	    "name": "time",
+	    "short": "Tímanotkun",
+	    "text": "Hversu vel finnst þér þú nýta tímann þinn?"
+	},
+	{
+	    "name": "health",
+	    "short": "Heilsa",
+	    "text": "Hversu heilbrigða(n) telur þú þig vera?"
+	},
+	{
+	    "name": "life",
+	    "short": "Lífið",
+	    "text": "Hversu ánægð(ur) ertu með lífið almennt?"
+	}
+    ]
 }

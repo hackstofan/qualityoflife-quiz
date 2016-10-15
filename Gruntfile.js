@@ -4,12 +4,18 @@ module.exports = function(grunt) {
 	pkg: grunt.file.readJSON('package.json'),
 	clean: ['build/'],
 	copy: {
-	    img: {
+	    build: {
 		files: [
 		    {
 			expand: true,
-			cwd: 'src/',
-			src: ['img/*'],
+			cwd: 'src/img/',
+			src: ['*.jpg', '*.png'],
+			dest: 'build/assets/img/'
+		    },
+		    {
+			expand: true,
+			cwd: 'src/external',
+			src: ['js/*', 'css/*'],
 			dest: 'build/assets/'
 		    }
 		]
@@ -25,6 +31,13 @@ module.exports = function(grunt) {
 		}
 	    }
 	},
+ 	uglify: {
+ 	    build: {
+ 		files: {
+ 		    'build/assets/js/app.js': ['src/js/*.js']
+ 		}
+ 	    }
+ 	},
 	nunjucks: {
 	    options: {
 		data: grunt.file.readJSON("project.json"),
@@ -47,10 +60,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-nunjucks-2-html');
 
     grunt.registerTask('default', [
-	'clean', 'copy', 'less', 'nunjucks'
+	'clean', 'copy', 'less', 'uglify', 'nunjucks'
     ]);
 
 };

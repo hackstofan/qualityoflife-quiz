@@ -3,6 +3,16 @@
 @light-gray: #fdfdfd;
 @dark-gray: #222222;
 
+@safety: #ca221d;
+@government: #c22769;
+@environment: #3F93E1;
+@finance: #481B79;
+@housing: #6AAC32;
+@job: #42928F;
+@time: #D32645;
+@health: #CD531C;
+@life: #EDC92D;
+
 html, body, main {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -18,6 +28,56 @@ html, body, main {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.bg-fixed {
+    min-height: 100%;
+}
+
+.safety {
+    .noUi-connect {
+        background: @safety;
+    }
+ }
+.government {
+    .noUi-connect {
+        background: @government;
+    }
+ }
+.environment {
+    .noUi-connect {
+        background: @environment;
+    }
+ }
+.finance {
+    .noUi-connect {
+        background: @finance;
+    }
+ }
+.housing {
+    .noUi-connect {
+        background: @housing;
+    }
+ }
+.job {
+    .noUi-connect {
+        background: @job;
+    }
+ }
+.time {
+    .noUi-connect {
+        background: @time;
+    }
+ }
+.health {
+    .noUi-connect {
+        background: @health;
+    }
+ }
+.life {
+    .noUi-connect {
+        background: @life;
+    }
+ }
 
 #welcome {
     position: relative;
@@ -42,4 +102,15 @@ html, body, main {
 	    color: @dark-gray;
 	}
    }
+}
+
+#questions {
+    background: #fff;
+
+    h2 {
+        margin-top: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+    }
 }
