@@ -54,6 +54,12 @@ module.exports = function(grunt) {
 		    ext: ".html"
 		}]
 	    }
+	},
+	connect: {
+	    dev: {
+		port: 8080,
+		base: 'build'
+	    }
 	}
     });
     
@@ -62,9 +68,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-nunjucks-2-html');
+    grunt.loadNpmTasks('grunt-connect');
 
     grunt.registerTask('default', [
-	'clean', 'copy', 'less', 'uglify', 'nunjucks'
+	'clean', 'copy', 'less', 'uglify', 'nunjucks', 'connect'
     ]);
 
 };
