@@ -57,6 +57,10 @@ var category_result = function(category, results) {
 
 $('#generate-results').click(function(event){
     var results = {}
+    $(this).hide();
+    $('#categories').show();
+    scrollTo('#categories');
+
     $('.answer').each(function(idx,obj) {
 	var category = $(obj).data('category');
 	var value = parseInt(this.noUiSlider.get());
