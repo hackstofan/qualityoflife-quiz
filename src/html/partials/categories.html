@@ -1,0 +1,24 @@
+<div class="container">
+  <div id="categories" class="bg-scroll">
+    <h2>Einstök atriði</h2>
+
+    {% for group in questions | batch(3) %}
+    <div class="row">
+      {% for question in group %}
+      <div data-category="{{ question.name }}" class="category-result col-sm-12 col-lg-4">
+	<h3>{{ question.short }}</h3>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
+	  <p>Þér finnst {{ question.short|lower }} hjá þér vera eins og
+	    <strong class="country-appendix">á Íslandi</strong>.
+	  </p>
+	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
+	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
+	</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    <hr/>
+  </div>
+</div>

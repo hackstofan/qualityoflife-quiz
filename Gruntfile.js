@@ -17,8 +17,14 @@ module.exports = function(grunt) {
 			cwd: 'src/external',
 			src: ['js/*', 'css/*'],
 			dest: 'build/assets/'
-		    }
-		]
+		    },
+		    {
+			expand: true,
+			cwd: 'src/data',
+			src: ['*.json'],
+			dest: 'build/assets/data'
+		    } 
+		] 
 	    }
 	},
 	less: {

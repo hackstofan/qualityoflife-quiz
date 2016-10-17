@@ -174,7 +174,7 @@ html, body, main {
    }
 }
 
-#questions {
+#questions, #categories {
     background: #fff;
 
     h2 {
@@ -182,5 +182,125 @@ html, body, main {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
+    }
+}
+
+#categories {
+    .category-result .category-viz {
+        .min, .max {
+	    fill: #ababab;
+	}
+
+	.iceland {
+	    fill: @dark-gray;
+	}
+    }
+
+    .category-result[data-category="safety"] {
+        .category-viz {
+            .you {
+                fill: @safety;
+	    }
+
+            .closest {
+	        fill: darken(@safety, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="government"] {
+        .category-viz {
+            .you {
+                fill: @government;
+	    }
+
+            .closest {
+	        fill: darken(@government, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="environment"] {
+        .category-viz {
+            .you {
+                fill: @environment;
+	    }
+
+            .closest {
+	        fill: darken(@environment, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="finance"] {
+        .category-viz {
+            .you {
+                fill: @finance;
+	    }
+
+            .closest {
+	        fill: darken(@finance, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="housing"] {
+        .category-viz {
+            .you {
+                fill: @housing;
+	    }
+
+            .closest {
+	        fill: darken(@housing, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="job"] {
+        .category-viz {
+            .you {
+                fill: @job;
+	    }
+
+            .closest {
+	        fill: darken(@job, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="time"] {
+        .category-viz {
+            .you {
+                fill: @time;
+	    }
+
+            .closest {
+	        fill: darken(@time, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="health"] {
+        .category-viz {
+            .you {
+                fill: @health;
+	    }
+
+            .closest {
+	        fill: darken(@health, 10%);
+	    }
+	}
+    }
+
+    .category-result[data-category="life"] {
+        .category-viz {
+            .you {
+                fill: @life;
+	    }
+
+            .closest {
+	        fill: darken(@life, 10%);
+	    }
+	}
     }
 }
