@@ -5,7 +5,7 @@
 	{
 	    "name": "safety",
 	    "short": "Öryggi",
-	    "text": "Hversu örugg(ur) finnst þér þú vera við að labba ein(n) að nóttu til í hverfinu þínu?"
+	    "text": "Hversu örugg(ur) ertu þegar þú gengur ein(n) að nóttu til í hverfinu þínu?"
 	},
 	{
 	    "name": "government",
@@ -41,6 +41,11 @@
 	    "name": "health",
 	    "short": "Heilsa",
 	    "text": "Hversu góða telur þú heilsu þína vera?"
+	},
+	{
+	    "name": "social",
+	    "short": "Tengsl",
+	    "text": "Hversu ánægð(ur) ertu með tengsl þín við annað fólk?"
 	},
 	{
 	    "name": "life",

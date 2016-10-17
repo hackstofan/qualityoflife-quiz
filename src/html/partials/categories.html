@@ -2,10 +2,10 @@
   <div id="categories" class="bg-scroll">
     <h2>Einstök atriði</h2>
 
-    {% for group in questions | batch(3) %}
+    {% for group in questions | batch(2) %}
     <div class="row">
       {% for question in group %}
-      <div data-category="{{ question.name }}" class="category-result col-sm-12 col-lg-4">
+      <div data-category="{{ question.name }}" class="category-result col-sm-12 col-lg-6">
 	<h3>{{ question.short }}</h3>
 	<div class="category-viz"></div>
 	<div class="category-analysis">

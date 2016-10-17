@@ -11,7 +11,8 @@
 @job: #42928F;
 @time: #D32645;
 @health: #CD531C;
-@life: #EDC92D;
+@social: #EDC92D;
+@life: #A5B425;
 
 html, body, main {
     height: 100%;
@@ -75,6 +76,9 @@ html, body, main {
      }
     &[data-category="health"] {
         .svg-bg-fill("../img/badge.svg", "#000000", "@{health}");
+     }
+    &[data-category="social"] {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{social}");
      }
     &[data-category="life"] {
         .svg-bg-fill("../img/badge.svg", "#000000", "@{life}");
@@ -140,6 +144,11 @@ html, body, main {
     &[data-category="health"] {
         .noUi-connect {
             background: @health;
+        }
+     }
+    &[data-category="social"] {
+        .noUi-connect {
+            background: @social;
         }
      }
     &[data-category="life"] {
@@ -291,7 +300,17 @@ html, body, main {
 	    }
 	}
     }
+    .category-result[data-category="social"] {
+        .category-viz {
+            .you {
+                fill: @social;
+	    }
 
+            .closest {
+	        fill: darken(@social, 10%);
+	    }
+	}
+    }
     .category-result[data-category="life"] {
         .category-viz {
             .you {
@@ -337,6 +356,9 @@ html, body, main {
      }
     .category-result[data-category="health"] h3:before {
         .svg-bg-fill("../img/badge.svg", "#000000", "@{health}");
+     }
+     .category-result[data-category="social"] h3:before {
+        .svg-bg-fill("../img/badge.svg", "#000000", "@{social}");
      }
     .category-result[data-category="life"] h3:before {
         .svg-bg-fill("../img/badge.svg", "#000000", "@{life}");
