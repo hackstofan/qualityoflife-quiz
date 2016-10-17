@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html,
+body,
+main {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.btn {
+  margin-bottom: 50px;
+}
+.bg-fixed {
+  min-height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-fixed {
+  min-height: 100%;
+}
+.category {
+  display: inline-block;
+  height: 144px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.category[data-category="safety"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23ca221d%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="government"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23c22769%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="environment"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%233F93E1%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="finance"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23481B79%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="housing"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%236AAC32%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="job"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%2342928F%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="time"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23D32645%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="health"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23CD531C%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="social"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23EDC92D%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category[data-category="life"] {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23A5B425%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+.category h3 {
+  margin: 0px;
+  padding: 0px;
+  line-height: 144px;
+  font-size: 22px;
+  color: #ffffff;
+}
+.question {
+  height: 144px;
+}
+.question > .text {
+  font-size: 28px;
+}
+.answer .noUi-value {
+  padding-top: 2px;
+}
+.answer[data-category="safety"] .noUi-connect {
+  background: #ca221d;
+}
+.answer[data-category="government"] .noUi-connect {
+  background: #c22769;
+}
+.answer[data-category="environment"] .noUi-connect {
+  background: #3F93E1;
+}
+.answer[data-category="finance"] .noUi-connect {
+  background: #481B79;
+}
+.answer[data-category="housing"] .noUi-connect {
+  background: #6AAC32;
+}
+.answer[data-category="job"] .noUi-connect {
+  background: #42928F;
+}
+.answer[data-category="time"] .noUi-connect {
+  background: #D32645;
+}
+.answer[data-category="health"] .noUi-connect {
+  background: #CD531C;
+}
+.answer[data-category="social"] .noUi-connect {
+  background: #EDC92D;
+}
+.answer[data-category="life"] .noUi-connect {
+  background: #A5B425;
+}
+#welcome {
+  position: relative;
+  background: url('../img/europe_1920x1080.jpg');
+  color: #fdfdfd;
+}
+#welcome .title {
+  position: absolute;
+  top: 32%;
+  width: 100%;
+  text-align: center;
+}
+#welcome .title h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px #3c3c3c;
+  font-weight: bold;
+  font-size: 82px;
+}
+#welcome .title p {
+  font-size: 22px;
+  text-shadow: 1px 1px #3c3c3c;
+  color: #fdfdfd;
+}
+#questions,
+#categories {
+  background: #fff;
+}
+#questions h2,
+#categories h2 {
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#categories {
+  display: none;
+}
+#categories .category-result .category-viz .min,
+#categories .category-result .category-viz .max {
+  fill: #ababab;
+}
+#categories .category-result .category-viz .iceland {
+  fill: #222222;
+}
+#categories .category-result[data-category="safety"] .category-viz .you {
+  fill: #ca221d;
+}
+#categories .category-result[data-category="safety"] .category-viz .closest {
+  fill: #9d1a17;
+}
+#categories .category-result[data-category="government"] .category-viz .you {
+  fill: #c22769;
+}
+#categories .category-result[data-category="government"] .category-viz .closest {
+  fill: #981e52;
+}
+#categories .category-result[data-category="environment"] .category-viz .you {
+  fill: #3F93E1;
+}
+#categories .category-result[data-category="environment"] .category-viz .closest {
+  fill: #207acd;
+}
+#categories .category-result[data-category="finance"] .category-viz .you {
+  fill: #481B79;
+}
+#categories .category-result[data-category="finance"] .category-viz .closest {
+  fill: #2f124f;
+}
+#categories .category-result[data-category="housing"] .category-viz .you {
+  fill: #6AAC32;
+}
+#categories .category-result[data-category="housing"] .category-viz .closest {
+  fill: #528427;
+}
+#categories .category-result[data-category="job"] .category-viz .you {
+  fill: #42928F;
+}
+#categories .category-result[data-category="job"] .category-viz .closest {
+  fill: #326f6d;
+}
+#categories .category-result[data-category="time"] .category-viz .you {
+  fill: #D32645;
+}
+#categories .category-result[data-category="time"] .category-viz .closest {
+  fill: #a81e37;
+}
+#categories .category-result[data-category="health"] .category-viz .you {
+  fill: #CD531C;
+}
+#categories .category-result[data-category="health"] .category-viz .closest {
+  fill: #a04116;
+}
+#categories .category-result[data-category="social"] .category-viz .you {
+  fill: #EDC92D;
+}
+#categories .category-result[data-category="social"] .category-viz .closest {
+  fill: #d5b012;
+}
+#categories .category-result[data-category="life"] .category-viz .you {
+  fill: #A5B425;
+}
+#categories .category-result[data-category="life"] .category-viz .closest {
+  fill: #7e8a1c;
+}
+#categories .category-result > h3:before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+#categories .category-result[data-category="safety"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23ca221d%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="government"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23c22769%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="environment"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%233F93E1%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="finance"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23481B79%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="housing"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%236AAC32%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="job"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%2342928F%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="time"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23D32645%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="health"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23CD531C%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="social"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23EDC92D%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
+#categories .category-result[data-category="life"] h3:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067.12%2046.88%22%3E%3Cpath%20style%3D%22fill%3A%23A5B425%3B%22%20d%3D%22M274.32%2C453.56H237.57a15.18%2C15.18%2C0%2C0%2C0-15.18%2C15.18v31.7h51.94a15.18%2C15.18%2C0%2C0%2C0%2C15.18-15.18v-31.7Z%22%20transform%3D%22translate(-222.38%20-453.56)%22%2F%3E%3C%2Fsvg%3E%0A");
+}
