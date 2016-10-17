@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 	pkg: grunt.file.readJSON('package.json'),
-	clean: ['build/'],
+	clean: ['build/', '!build/.git'],
 	copy: {
 	    build: {
 		files: [
