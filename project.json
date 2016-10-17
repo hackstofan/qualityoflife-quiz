@@ -1,6 +1,6 @@
 {
     "title": "Lífskjaravitinn",
-    "description": "Viltu vita hvernig þú upplifir lífsgæðin þín?",
+    "description": "Hvernig finnst þér þín lífskjör vera?",
     "questions": [
 	{
 	    "name": "safety",
@@ -9,12 +9,12 @@
 	},
 	{
 	    "name": "government",
-	    "short": "Stjórnsýslan",
+	    "short": "Stjórnsýsla",
 	    "text": "Hversu mikið traust berðu til stjórnmálafólks á Íslandi?"
 	},
 	{
 	    "name": "environment",
-	    "short": "Umhverfið",
+	    "short": "Umhverfi",
 	    "text": "Hversu ánægð(ur) ertu með útivistar-, frístunda- eða græn svæði í nágrenni við heimili þitt?"
 	},
 	{
@@ -25,7 +25,7 @@
 	{
 	    "name": "housing",
 	    "short": "Húsnæði",
-	    "text": "Hversu ánægð(ur) ertu með húsnæðið þitt?"
+	    "text": "Hversu ánægð(ur) ertu með húsnæði þitt?"
 	},
 	{
 	    "name": "job",
