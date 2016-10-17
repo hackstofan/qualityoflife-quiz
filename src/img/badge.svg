@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns="http://www.w3.org/2000/svg"
-   width="14.111111mm"
-   height="16.294107mm"
-   viewBox="0 0 49.999998 57.735025"
-   version="1.1">
-  <g
-     style="fill:#000000;fill-opacity:1"
-     transform="matrix(0.22592403,0,0,0.22592403,-51.168673,-12.65524)">
-    <path
-       d="m 226.48619,247.67842 0,-127.7753 110.65667,-63.887655 110.65666,63.887655 -10e-6,127.77531 -110.65666,63.88765 z" />
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.12 46.88"><path style="fill:#000000;" d="M274.32,453.56H237.57a15.18,15.18,0,0,0-15.18,15.18v31.7h51.94a15.18,15.18,0,0,0,15.18-15.18v-31.7Z" transform="translate(-222.38 -453.56)"/></svg>
