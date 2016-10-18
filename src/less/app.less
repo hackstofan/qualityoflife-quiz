@@ -14,6 +14,26 @@
 @social: #EDC92D;
 @life: #A5B425;
 
+@categories: safety, government, environment, finance, housing, job, time, health, social, life;
+
+line {
+    .-(@i: length(@categories)) when (@i > 0) {
+        @name: extract(@categories, @i);
+        &.@{name} { stroke: @@name; }
+        .-((@i - 1));
+    }
+    .-;
+}
+
+rect, text {
+    .-(@i: length(@categories)) when (@i > 0) {
+        @name: extract(@categories, @i);
+        &.@{name} { fill: @@name; }
+        .-((@i - 1));
+    }
+    .-;
+}
+
 html, body, main {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -191,7 +211,7 @@ html, body, main {
    }
 }
 
-#questions, #categories {
+#questions, #categories, #average {
     background: #fff;
 
     h2 {
@@ -202,7 +222,7 @@ html, body, main {
     }
 }
 
-#categories {
+#categories, #average {
     display: none;
 
     .category-result .category-viz {
