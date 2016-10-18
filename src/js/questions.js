@@ -6,7 +6,11 @@ $('.answer').each(function(idx, obj) {
 	range: {
 	    'min': 0,
 	    'max': 10
-	}
+	},
+	pips: {
+	    mode: 'steps',
+	    density: 10
+	}   
     });
 });
 
