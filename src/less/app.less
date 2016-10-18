@@ -73,36 +73,14 @@ html, body, main {
     background-position: center center;
     background-size: contain;
 
-    &[data-category="safety"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{safety}");
+    .-(@i: length(@categories)) when (@i > 0) {
+        @name: extract(@categories, @i);
+        &[data-category="@{name}"] {
+            .svg-bg-fill("../img/badge.svg", "#000000", @@name);
+	}
+        .-((@i - 1));
     }
-    &[data-category="government"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{government}");
-    }
-    &[data-category="environment"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{environment}");
-     }
-    &[data-category="finance"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{finance}");
-     }
-    &[data-category="housing"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{housing}");
-     }
-    &[data-category="job"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{job}");
-     }
-    &[data-category="time"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{time}");
-     }
-    &[data-category="health"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{health}");
-     }
-    &[data-category="social"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{social}");
-     }
-    &[data-category="life"] {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{life}");
-    }
+    .-;
 
     h3 {
         margin: 0px;
@@ -133,56 +111,15 @@ html, body, main {
         box-shadow: none;
     }
 
-    &[data-category="safety"] {
-        .noUi-handle {
-            background: @safety;
+    .-(@i: length(@categories)) when (@i > 0) {
+        @name: extract(@categories, @i);
+        &[data-category="@{name}"] {
+       	    .noUi-handle { background: @@name; }
         }
-     }
-    &[data-category="government"] {
-        .noUi-handle {
-            background: @government;
-        }
-     }
-    &[data-category="environment"] {
-        .noUi-handle {
-            background: @environment;
-        }
-     }
-    &[data-category="finance"] {
-        .noUi-handle {
-            background: @finance;
-        }
-     }
-    &[data-category="housing"] {
-        .noUi-handle {
-            background: @housing;
-        }
-     }
-    &[data-category="job"] {
-        .noUi-handle {
-            background: @job;
-        }
-     }
-    &[data-category="time"] {
-        .noUi-handle {
-            background: @time;
-        }
-     }
-    &[data-category="health"] {
-        .noUi-handle {
-            background: @health;
-        }
-     }
-    &[data-category="social"] {
-        .noUi-handle {
-            background: @social;
-        }
-     }
-    &[data-category="life"] {
-        .noUi-handle {
-            background: @life;
-        }
+        .-((@i - 1));
     }
+    .-;
+
 }
 
 #welcome {
@@ -225,172 +162,39 @@ html, body, main {
 #categories, #average {
     display: none;
 
-    .category-result .category-viz {
-        .min, .max {
-	    fill: #ababab;
-	}
-
-	.iceland {
-	    fill: @dark-gray;
-	}
-    }
-
-    .category-result[data-category="safety"] {
+    .category-result {
         .category-viz {
-            .you {
-                fill: @safety;
-	    }
+            .min, .max { fill: #ababab; }
+	    .iceland { fill: @dark-gray; }
+        }
 
-            .closest {
-	        fill: darken(@safety, 10%);
-	    }
-	}
-    }
+        .-(@i: length(@categories)) when (@i > 0) {
+            @name: extract(@categories, @i);
+            &[data-category="@{name}"] {
+	        h3:before {
+                    .svg-bg-fill("../img/badge.svg", "#000000", @@name);
+		}
 
-    .category-result[data-category="government"] {
-        .category-viz {
-            .you {
-                fill: @government;
-	    }
+                .category-viz {
+		    .you { fill: @@name; }
+		    .closest {
+		        fill: @@name;
+			opacity: 0.5;
+                    }
+		}
+            }
+            .-((@i - 1));
+        }
+        .-;
 
-            .closest {
-	        fill: darken(@government, 10%);
-	    }
-	}
-    }
-
-    .category-result[data-category="environment"] {
-        .category-viz {
-            .you {
-                fill: @environment;
-	    }
-
-            .closest {
-	        fill: darken(@environment, 10%);
-	    }
-	}
-    }
-
-    .category-result[data-category="finance"] {
-        .category-viz {
-            .you {
-                fill: @finance;
-	    }
-
-            .closest {
-	        fill: darken(@finance, 10%);
-	    }
-	}
-    }
-
-    .category-result[data-category="housing"] {
-        .category-viz {
-            .you {
-                fill: @housing;
-	    }
-
-            .closest {
-	        fill: darken(@housing, 10%);
-	    }
-	}
-    }
-
-    .category-result[data-category="job"] {
-        .category-viz {
-            .you {
-                fill: @job;
-	    }
-
-            .closest {
-	        fill: darken(@job, 10%);
-	    }
-	}
-    }
-
-    .category-result[data-category="time"] {
-        .category-viz {
-            .you {
-                fill: @time;
-	    }
-
-            .closest {
-	        fill: darken(@time, 10%);
-	    }
-	}
-    }
-
-    .category-result[data-category="health"] {
-        .category-viz {
-            .you {
-                fill: @health;
-	    }
-
-            .closest {
-	        fill: darken(@health, 10%);
-	    }
-	}
-    }
-    .category-result[data-category="social"] {
-        .category-viz {
-            .you {
-                fill: @social;
-	    }
-
-            .closest {
-	        fill: darken(@social, 10%);
-	    }
-	}
-    }
-    .category-result[data-category="life"] {
-        .category-viz {
-            .you {
-                fill: @life;
-	    }
-
-            .closest {
-	        fill: darken(@life, 10%);
-	    }
-	}
-    }
-
-    .category-result > h3:before {
-        display: inline-block;
-	content: "";
-	width: 30px;
-	height: 16px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-    }
-
-    .category-result[data-category="safety"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{safety}");
-    }
-    .category-result[data-category="government"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{government}");
-    }
-    .category-result[data-category="environment"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{environment}");
-     }
-    .category-result[data-category="finance"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{finance}");
-     }
-    .category-result[data-category="housing"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{housing}");
-     }
-    .category-result[data-category="job"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{job}");
-     }
-    .category-result[data-category="time"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{time}");
-     }
-    .category-result[data-category="health"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{health}");
-     }
-     .category-result[data-category="social"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{social}");
-     }
-    .category-result[data-category="life"] h3:before {
-        .svg-bg-fill("../img/badge.svg", "#000000", "@{life}");
+        &> h3:before {
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 16px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
     }
 }
