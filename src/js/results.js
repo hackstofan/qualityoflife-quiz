@@ -75,9 +75,9 @@ var overall_results = function(results, closest, reference) {
 	.attr("height", height)
 	.attr("width", width);
 
-    var bar = chart.selectAll("g").data(results).enter().append("g");
+    var viz = chart.selectAll("g").data(results).enter().append("g");
 
-    bar.append("rect")
+    viz.append("rect")
 	.attr("opacity", 0.5)
 	.attr("y", function(d,i) {
 	    return y(4*i)+y(2)/2-4; })
@@ -86,7 +86,7 @@ var overall_results = function(results, closest, reference) {
 	.attr("width", 8)
 	.attr("height", 8);
 
-    bar.append("text")
+    viz.append("text")
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
 	.attr("opacity", 0.22)
@@ -97,7 +97,7 @@ var overall_results = function(results, closest, reference) {
 	.text(function(d) {
 	    return country_names[reference].icelandic; });
 
-    bar.append("rect")
+    viz.append("rect")
         .attr("class", function(d) { return d.name; })
 	.attr("opacity", 0.5)
 	.attr("y", function(d,i) {
@@ -107,7 +107,7 @@ var overall_results = function(results, closest, reference) {
 	.attr("width", 8)
 	.attr("height", 8);
 
-    bar.append("text")
+    viz.append("text")
         .attr("class", function(d) { return d.name; })
 	.attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
@@ -119,7 +119,7 @@ var overall_results = function(results, closest, reference) {
 	.text(function(d) {
 	    return country_names[closest].icelandic; });
 
-    bar.append("text")
+    viz.append("text")
 	.attr("class", function(d) { return d.name; })
 	.attr("text-anchor", "middle")
 	.attr("font-size", 10)
@@ -129,7 +129,7 @@ var overall_results = function(results, closest, reference) {
 	.attr("x", x(0)/2)
 	.text(function(d) { return d.label });
 
-    bar.append("text")
+    viz.append("text")
 	.attr("class", function(d) { return d.name; })
 	.attr("text-anchor", "middle")
 	.attr("font-size", 10)
@@ -139,7 +139,7 @@ var overall_results = function(results, closest, reference) {
 	.attr("x", width - (width - x(10))/2)
 	.text(function(d) { return d.label });
 
-    bar.append("line")
+    viz.append("line")
 	.attr("stroke", "#ababab")
         .attr("opacity", 0.5)
         .attr("stroke-width", 1)
@@ -148,7 +148,7 @@ var overall_results = function(results, closest, reference) {
 	.attr("x2", x(10))
 	.attr("y2", function(d,i) { return y(4*i)+y(2)/2; });
 
-    bar.append("line")
+    viz.append("line")
 	.attr("class", function(d) { return d.name; })
 	.attr("stroke-width", 4)
 	.attr("x1", function(d) { return x(d.you); })
@@ -156,7 +156,7 @@ var overall_results = function(results, closest, reference) {
 	.attr("x2", function(d) { return x(d.you); })
         .attr("y2", function(d,i)  {return y(4*i)+y(2); });
 
-    bar.append("text")
+    viz.append("text")
 	.attr("class", function(d) { return d.name; })
 	.attr("text-anchor", "middle")
         .attr("dominant-baseline", "bottom")
