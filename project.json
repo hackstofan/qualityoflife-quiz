@@ -1,6 +1,6 @@
 {
-    "title": "Lífskjaravitinn",
-    "description": "Hvernig finnst þér þín lífskjör vera?",
+    "title": "Lífsgæðavogin",
+    "description": "Hvernig eru þín lífsgæði miðað við aðra íbúa Evrópu",
     "questions": [
 	{
 	    "name": "safety",
@@ -15,7 +15,7 @@
 	{
 	    "name": "environment",
 	    "short": "Umhverfi",
-	    "text": "Hversu ánægð(ur) ertu með útivistar-, frístunda- eða græn svæði í nágrenni við heimili þitt?"
+	    "text": "Hversu ánægð(ur) ertu með útivistar og frístundasvæði í nágrenni við heimili þitt?"
 	},
 	{
 	    "name": "finance",
