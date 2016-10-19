@@ -9,7 +9,7 @@ $.getJSON('/assets/data/qualityoflife.json', function(data) {
 var category_result = function(category, results) {
     var category_box = '.category-result[data-category="'+category+'"]';
 
-    $(category_box + ' > .category-analysis .country-appendix').text(
+    $(category_box + ' .country-appendix').text(
 	country_names[results[2].key].appendix);
 
     var width = $(category_box).width();
