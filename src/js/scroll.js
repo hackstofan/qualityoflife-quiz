@@ -5,7 +5,6 @@ var scrollTo = function(hash) {
 	$('html, body').animate({
 	    scrollTop: target.offset().top
 	}, 1000);
-	return false;
     }
 };
 
@@ -14,5 +13,6 @@ $(function() {
 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	    scrollTo(this.hash);
 	}
+	return false;
     });
 });
