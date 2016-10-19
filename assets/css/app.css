@@ -240,6 +240,10 @@ main {
 #average {
   display: none;
 }
+#categories .category-result > p,
+#average .category-result > p {
+  font-size: 122%;
+}
 #categories .category-result .category-viz line,
 #average .category-result .category-viz line {
   stroke-width: 2;
