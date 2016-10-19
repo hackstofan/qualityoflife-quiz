@@ -11,7 +11,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Lífsgæðavogin" />
     <meta property="og:description" content="Hvernig eru þín lífsgæði miðað við aðra íbúa Evrópu?" />
-    <meta property="og:image" content="https://hackstofan.github.io/qualityoflife-quiz//assets/img/europe_2560x1440.jpg" />
+    <meta property="og:image" content="https://hackstofan.github.io/qualityoflife-quiz//assets/img/social_europe.jpg" />
 </head>
 
     <title>Lífsgæðavogin</title>
@@ -30,7 +30,22 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      
+      t._e = [];
+      t.ready = function(f) {
+      t._e.push(f);
+      };
+      
+      return t;
+      }(document, "script", "twitter-wjs"));</script>
     <main>
       
 
@@ -390,14 +405,20 @@
 </div>
 
 <div class="container">
+  <div id="social" class="text-center">
+    <div class="fb-share-button" data-href="https://hackstofan.github.io/qualityoflife-quiz/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://hackstofan.github.io/qualityoflife-quiz/&amp;src=sdkpreparse">Deildu á Facebook</a></div>
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet">
+      Tístu á Twitter
+    </a>
+  </div>
+</div>
+
+<div class="container">
   <div id="average" class="bg-scroll">
     <div class="row">
       <div class="col-sm-12">
 	<div class="average-result">
 	  <h2>Á heildina litið metur þú þín lífsgæði líkt og íbúar <span class="country-appendix">á Íslandi</span></h2>
-	  <div class="text-center">
-	    <div class="fb-share-button" data-href="https://hackstofan.github.io/qualityoflife-quiz/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://hackstofan.github.io/qualityoflife-quiz/&amp;src=sdkpreparse">Deildu á Facebook</a></div>
-	  </div>
 	</div>
 	</div>
       </div>

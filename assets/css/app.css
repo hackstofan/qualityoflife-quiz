@@ -508,3 +508,6 @@ main {
   background-position: center center;
   background-size: contain;
 }
+#social {
+  min-height: 20px;
+}
