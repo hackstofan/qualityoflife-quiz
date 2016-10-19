@@ -10,7 +10,9 @@ var category_result = function(category, results) {
     var category_box = '.category-result[data-category="'+category+'"]';
 
     $(category_box + ' .country-appendix').text(
-	country_names[results[2].key].appendix);
+	_.map(results[2].key, function(c) {
+	    return country_names[c].appendix; }).join('/')
+    );
 
     var width = $(category_box).width();
     var height = 82;
@@ -191,17 +193,27 @@ $('#generate-results').click(function(event){
 	    _.keys(countries[category]), function(c) {
 		return countries[category][c] === max_value; });
 
-	var closest_country = _.min(_.pairs(countries[category]),
-				    function(p) {
-					return Math.pow(p[1] - value, 2);
-				    })[0];
+	var distance = _.clone(countries[category]);
+	_.each(distance, function(country_value, key) {
+	    distance[key] = Math.abs(country_value - value);
+	});
+
+	var closest_value = _.min(_.values(distance));
+	var closest_countries = _.filter(
+	    _.keys(distance), function(c) {
+		return distance[c] === closest_value; });
+
+	// For this we're going to get a prize for optimism. We'll pick the
+	// maximum country values to show in our visualisation.
+	var closest_max = _.max(closest_countries, function(c) {
+	    return countries[category][c]; })
+	var closest_max_value = countries[category][closest_max];
 
 	var category_highlights = [
 	    {'name': 'Minnst',
 	     'class': 'min',
-	     'key': min_countries[0],
+	     'key': min_countries,
 	     'country': _.map(min_countries, function(c) {
-		 console.log(country_names[c].icelandic);
 		 return country_names[c].icelandic; }).join('/'),
 	     'value': min_value
 	    },
@@ -213,9 +225,10 @@ $('#generate-results').click(function(event){
 	    },
 	    {'name': 'Líkast þér',
 	     'class': 'closest',
-	     'key': closest_country,
-	     'country': country_names[closest_country].icelandic,
-	     'value': countries[category][closest_country]
+	     'key': closest_countries,
+	     'country': _.map(closest_countries, function(c) {
+		 return country_names[c].icelandic; }).join('/'),
+	     'value': closest_max_value
 	    },
 	    {'name': country_names['iceland'].icelandic,
 	     'class': 'iceland',
@@ -225,7 +238,7 @@ $('#generate-results').click(function(event){
 	    },
 	    {'name': 'Mest',
 	     'class': 'max',
-	     'key': max_countries[0],
+	     'key': max_countries,
 	     'country': _.map(max_countries, function(c) {
 		 return country_names[c].icelandic; }).join('/'),
 	     'value': max_value
@@ -239,7 +252,7 @@ $('#generate-results').click(function(event){
 
     var mapped = _.mapObject(countries, function(country_values, category) {
 	return _.mapObject(country_values, function(value, country) {
-	    return Math.pow(value-results[category].value, 2)
+	    return Math.abs(value-results[category].value);
 	});
     });
 
