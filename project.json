@@ -1,6 +1,7 @@
 {
     "title": "Lífsgæðavogin",
     "description": "Hvernig eru þín lífsgæði miðað við aðra íbúa Evrópu?",
+    "url": "https://hackstofan.github.io/qualityoflife-quiz/",
     "questions": [
 	{
 	    "name": "safety",
