@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Hagstofa Íslands">
 
-    <title>Lífskjaravitinn</title>
+    <title>Lífsgæðavogin</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,8 +20,8 @@
 
 <div id="welcome" class="bg-fixed">
   <div class="title">
-    <h1>Lífskjaravitinn</h1>
-    <p>Hvernig finnst þér þín lífskjör vera?</p>
+    <h1>Lífsgæðavogin</h1>
+    <p>Hvernig eru þín lífsgæði miðað við aðra íbúa Evrópu</p>
     <a href="#questions" class="btn btn-primary btn-lg">Taka þátt?</a>
   </div>
 </div>
@@ -37,7 +37,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu örugg(ur) ertu þegar þú gengur ein(n) að nóttu til í hverfinu þínu?</p>
-	<div data-category="safety" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Öryggi" data-category="safety" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -48,7 +54,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu mikið traust berðu til stjórnmálafólks á Íslandi?</p>
-	<div data-category="government" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Stjórnsýsla" data-category="government" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -58,8 +70,14 @@
 	<h3>Umhverfi</h3>
       </div>
       <div class="question col-sm-12 col-lg-10">
-	<p class="text">Hversu ánægð(ur) ertu með útivistar-, frístunda- eða græn svæði í nágrenni við heimili þitt?</p>
-	<div data-category="environment" class="answer"></div>
+	<p class="text">Hversu ánægð(ur) ertu með útivistar og frístundasvæði í nágrenni við heimili þitt?</p>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Umhverfi" data-category="environment" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -70,7 +88,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu ánægð(ur) ertu með fjárhag heimilisins?</p>
-	<div data-category="finance" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Fjármál" data-category="finance" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -81,7 +105,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu ánægð(ur) ertu með húsnæði þitt?</p>
-	<div data-category="housing" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Húsnæði" data-category="housing" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -92,7 +122,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu ánægð(ur) ertu með núverandi aðalstarf þitt?</p>
-	<div data-category="job" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Atvinna" data-category="job" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -103,7 +139,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu vel finnst þér þú nýta tíma þinn?</p>
-	<div data-category="time" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Tímanotkun" data-category="time" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -114,7 +156,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu góða telur þú heilsu þína vera?</p>
-	<div data-category="health" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Heilsa" data-category="health" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -125,7 +173,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu ánægð(ur) ertu með tengsl þín við annað fólk?</p>
-	<div data-category="social" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Tengsl" data-category="social" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -136,7 +190,13 @@
       </div>
       <div class="question col-sm-12 col-lg-10">
 	<p class="text">Hversu ánægð(ur) ertu með lífið almennt?</p>
-	<div data-category="life" class="answer"></div>
+	<div class="row">
+	  <div class="col-sm-1 text-right">Minnst</div>
+	  <div class="col-sm-10">
+	    <div data-label="Lífið" data-category="life" class="answer"></div>
+	  </div>
+	  <div class="col-sm-1 text-left">Mest</div>
+	</div>
       </div>
     </div>
     <hr/>
@@ -161,11 +221,11 @@
       
       <div data-category="safety" class="category-result col-sm-12 col-lg-6">
 	<h3>Öryggi</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst öryggi hjá þér vera eins og
+	<p>Þú metur öryggi líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -173,11 +233,11 @@
       
       <div data-category="government" class="category-result col-sm-12 col-lg-6">
 	<h3>Stjórnsýsla</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst stjórnsýsla hjá þér vera eins og
+	<p>Þú metur stjórnsýsla líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -189,11 +249,11 @@
       
       <div data-category="environment" class="category-result col-sm-12 col-lg-6">
 	<h3>Umhverfi</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst umhverfi hjá þér vera eins og
+	<p>Þú metur umhverfi líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -201,11 +261,11 @@
       
       <div data-category="finance" class="category-result col-sm-12 col-lg-6">
 	<h3>Fjármál</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst fjármál hjá þér vera eins og
+	<p>Þú metur fjármál líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -217,11 +277,11 @@
       
       <div data-category="housing" class="category-result col-sm-12 col-lg-6">
 	<h3>Húsnæði</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst húsnæði hjá þér vera eins og
+	<p>Þú metur húsnæði líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -229,11 +289,11 @@
       
       <div data-category="job" class="category-result col-sm-12 col-lg-6">
 	<h3>Atvinna</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst atvinna hjá þér vera eins og
+	<p>Þú metur atvinna líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -245,11 +305,11 @@
       
       <div data-category="time" class="category-result col-sm-12 col-lg-6">
 	<h3>Tímanotkun</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst tímanotkun hjá þér vera eins og
+	<p>Þú metur tímanotkun líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -257,11 +317,11 @@
       
       <div data-category="health" class="category-result col-sm-12 col-lg-6">
 	<h3>Heilsa</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst heilsa hjá þér vera eins og
+	<p>Þú metur heilsa líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -273,11 +333,11 @@
       
       <div data-category="social" class="category-result col-sm-12 col-lg-6">
 	<h3>Tengsl</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst tengsl hjá þér vera eins og
+	<p>Þú metur tengsl líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -285,11 +345,11 @@
       
       <div data-category="life" class="category-result col-sm-12 col-lg-6">
 	<h3>Lífið</h3>
-	<div class="category-viz"></div>
-	<div class="category-analysis">
-	  <p>Þér finnst lífið hjá þér vera eins og
+	<p>Þú metur lífið líkt og íbúar
 	    <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
+	<div class="category-viz"></div>
+	<div class="category-analysis">
 	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
 	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
 	</div>
@@ -299,6 +359,23 @@
     
     <hr/>
   </div>
+</div>
+
+<div class="container">
+  <div id="average" class="bg-scroll">
+    <div class="row">
+      <div class="col-sm-12">
+	<div class="average-result">
+	  <h2>Á heildina litið metur þú þín lífsgæði líkt og íbúar <span class="country-appendix">á Íslandi</span></h2>
+	</div>
+	<div class="average-analysis">
+	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
+	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
+	</div>
+      </div>
+    </div>
+  </div>
+  <hr/>
 </div>
 
 
