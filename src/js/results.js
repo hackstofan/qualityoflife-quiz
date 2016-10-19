@@ -60,7 +60,7 @@ var category_result = function(category, results) {
 
 var overall_results = function(results, closest, reference) {
 
-    $('#average .average-result .country-appendix').text(
+    $('#mainresult .country-appendix').text(
 	country_names[closest].appendix
     );
 
@@ -248,6 +248,7 @@ $('#generate-results').click(function(event){
 	category_result(category, category_highlights);
     });
 
+    $('#mainresult').show();
     $('#average').show();
 
     var mapped = _.mapObject(countries, function(country_values, category) {
