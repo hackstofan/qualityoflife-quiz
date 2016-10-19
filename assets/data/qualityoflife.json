@@ -325,152 +325,152 @@
 	"austria": {
 	    "name": "austria",
 	    "icelandic": "Austurríki",
-	    "appendix": "í Austurríki"
+	    "appendix": "Austurríkis"
 	},
 	"belgium": {
 	    "name": "belgium",
 	    "icelandic": "Belgía",
-	    "appendix": "í Belgíu"
+	    "appendix": "Belgíu"
 	},
 	"bulgaria": {
 	    "name": "bulgaria",
 	    "icelandic": "Búlgaría",
-	    "appendix": "í Búlgaríu"
+	    "appendix": "Búlgaríu"
 	},
 	"cyprus": {
 	    "name": "cyprus",
 	    "icelandic": "Kýpur",
-	    "appendix": "á Kýpur"
+	    "appendix": "Kýpurs"
 	},
 	"czech republic": {
 	    "name": "czech republic",
 	    "icelandic": "Tékkland",
-	    "appendix": "í Tékklandi"
+	    "appendix": "Tékklands"
 	}, 
 	"denmark": {
 	    "name": "denmark",
 	    "icelandic": "Danmörk",
-	    "appendix": "í Danmörku"
+	    "appendix": "Danmerkur"
 	},
 	"estonia": {
 	    "name": "estonia",
 	    "icelandic": "Eistland",
-	    "appendix": "í Eistlandi"
+	    "appendix": "Eistlands"
 	},
 	"finland": {
 	    "name": "finland",
 	    "icelandic": "Finnland",
-	    "appendix": "í Finnlandi"
+	    "appendix": "Finnlands"
 	},
 	"france": {
 	    "name": "france",
 	    "icelandic": "Frakkland",
-	    "appendix": "í Frakklandi"
+	    "appendix": "Frakklands"
 	},
 	"germany": {
 	    "name": "germany",
 	    "icelandic": "Þýskaland",
-	    "appendix": "í Þýskalandi"
+	    "appendix": "Þýskalands"
 	},
 	"greece": {
 	    "name": "greece",
 	    "icelandic": "Grikkland",
-	    "appendix": "í Grikklandi"
+	    "appendix": "Grikklands"
 	},
 	"hungary": {
 	    "name": "hungary",
 	    "icelandic": "Ungverjaland",
-	    "appendix": "í Ungverjalandi"
+	    "appendix": "Ungverjalands"
 	},
 	"iceland": {
 	    "name": "iceland",
 	    "icelandic": "Ísland",
-	    "appendix": "á Íslandi"
+	    "appendix": "Íslands"
 	},
 	"ireland": {
 	    "name": "ireland",
 	    "icelandic": "Írland",
-	    "appendix": "á Írlandi"
+	    "appendix": "Írlands"
 	},
 	"italy": {
 	    "name": "italy",
 	    "icelandic": "Ítalía",
-	    "appendix": "á Ítalíu"
+	    "appendix": "Ítalíu"
 	},
 	"latvia": {
 	    "name": "latvia",
 	    "icelandic": "Lettland",
-	    "appendix": "í Lettlandi"
+	    "appendix": "Lettlands"
 	},
 	"lithuania": {
 	    "name": "lithuania",
 	    "icelandic": "Litháen",
-	    "appendix": "í Litháen"
+	    "appendix": "Litháens"
 	},
 	"luxembourg": {
 	    "name": "luxembourg",
-	    "icelandic": "Lúxembúrg",
-	    "appendix": "í Lúxembúrg"
+	    "icelandic": "Lúxemborg",
+	    "appendix": "Lúxemborgar"
 	},
 	"malta": {
 	    "name": "malta",
 	    "icelandic": "Malta",
-	    "appendix": "á Möltu"
+	    "appendix": "Möltu"
 	},
 	"netherlands": {
 	    "name": "netherlands",
 	    "icelandic": "Holland",
-	    "appendix": "í Hollandi"
+	    "appendix": "Hollands"
 	},
 	"norway": {
 	    "name": "norway",
 	    "icelandic": "Noregur",
-	    "appendix": "í Noregi"
+	    "appendix": "Noregs"
 	},
 	"poland": {
 	    "name": "poland",
 	    "icelandic": "Pólland",
-	    "appendix": "í Póllandi"
+	    "appendix": "Póllands"
 	},
 	"portugal": {
 	    "name": "portugal",
 	    "icelandic": "Portúgal",
-	    "appendix": "í Portúgal"
+	    "appendix": "Portúgals"
 	},
 	"romania": {
 	    "name": "romania",
 	    "icelandic": "Rómanía",
-	    "appendix": "í Rómaníu"
+	    "appendix": "Rómaníu"
 	},
 	"slovakia": {
 	    "name": "slovakia",
 	    "icelandic": "Slóvakía",
-	    "appendix": "í Slóvakíu"
+	    "appendix": "Slóvakíu"
 	},
 	"slovenia": {
 	    "name": "slovenia",
 	    "icelandic": "Slóvenía",
-	    "appendix": "í Slóveníu"
+	    "appendix": "Slóveníu"
 	},
 	"spain": {
 	    "name": "spain",
 	    "icelandic": "Spánn",
-	    "appendix": "á Spáni"
+	    "appendix": "Spánar"
 	},
 	"sweden": {
 	    "name": "sweden",
 	    "icelandic": "Svíþjóð",
-	    "appendix": "í Svíþjóð"
+	    "appendix": "Svíþjóðar"
 	},
 	"switzerland": {
 	    "name": "switzerland",
 	    "icelandic": "Sviss",
-	    "appendix": "í Sviss"
+	    "appendix": "Sviss"
 	},
 	"united kingdom": {
 	    "name": "united kingdom",
 	    "icelandic": "Bretland",
-	    "appendix": "á Bretlandi"
+	    "appendix": "Bretlands"
 	}
     }
 }
