@@ -164,8 +164,11 @@ html, body, main {
 
     .category-result {
         .category-viz {
-            .min, .max { fill: #ababab; }
-	    .iceland { fill: @dark-gray; }
+	    line { stroke-width: 2; }
+            line.min, line.max { stroke: #ababab; }
+            text.min, text.max { fill: #ababab; }
+	    line.iceland { stroke: @dark-gray; }
+	    text.iceland { fill: @dark-gray; }
         }
 
         .-(@i: length(@categories)) when (@i > 0) {
@@ -176,8 +179,15 @@ html, body, main {
 		}
 
                 .category-viz {
-		    .you { fill: @@name; }
-		    .closest {
+		    line.you {
+		        stroke: @@name;
+			stroke-width: 4; }
+		    text.you { fill: @@name; }
+		    line.closest {
+		        stroke: @@name;
+			opacity: 0.5;
+                    }
+		    text.closest {
 		        fill: @@name;
 			opacity: 0.5;
                     }

@@ -10,12 +10,14 @@ var category_result = function(category, results) {
     var category_box = '.category-result[data-category="'+category+'"]';
 
     $(category_box + ' > .category-analysis .country-appendix').text(
-	country_names[results[2].country].appendix);
+	country_names[results[2].key].appendix);
 
     var width = $(category_box).width();
-    var height = 64;
-    
-    var x = d3.scaleLinear().domain([0,10]).range([52, width-122])
+    var height = 82;
+
+    // 52 and 144 are found with trial and error but should be found by
+    // computing the largest possible text string and the width of that string
+    var x = d3.scaleLinear().domain([0,10]).range([52, width-144])
     var y = d3.scaleLinear().domain([0,5]).range([7, height-7])
     
     var chart = d3.selectAll(category_box + ' > .category-viz')
@@ -28,31 +30,30 @@ var category_result = function(category, results) {
 	.enter()
 	.append('g');
 
-    viz.append('rect')
+    viz.append('line')
 	.attr('class', function(d) { return d['class']; })
-	.attr('height', function(d) { return d['class'] === 'you' ? 4 : 2; })
-	.attr('width', function(d) { return x(d.value); } )
-	.attr('x', x(0))
-	.attr('y', function(d, i) {
-	    return d['class'] === 'you' ? y(i) - 1 : y(i) });
+	.attr('x1', x(0))
+	.attr('y1', function(d, i) { return y(i); })
+        .attr('x2', function(d) { return x(d.value); })
+	.attr('y2', function(d, i) { return y(i); });
 
     viz.append('text')
 	.attr('font-size', 10)
 	.attr('class', function(d) { return d['class']; })
-    	.attr('dy', 5)
 	.attr('text-anchor', 'end')
+        .attr('dominant-baseline', 'middle')
 	.attr('x', x(0) - 2)
 	.attr('y', function(d, i) { return y(i); })
 	.text(function(d) { return d.name; });
 
     viz.append('text')
 	.attr('font-size', 10)
+        .attr('dominant-baseline', 'middle')
 	.attr('class', function(d) { return d['class']; })
-    	.attr('dy', 5)
-	.attr('x', function(d) { return x(0) + x(d.value) + 2; })
+	.attr('x', function(d) { return x(d.value) + 2; })
 	.attr('y', function(d, i) { return y(i); })
 	.text(function(d) {
-	    return !!d.country ? country_names[d.country].icelandic : d.name;});
+	    return !!d.country ? d.country : d.name;});
 }
 
 var overall_results = function(results, closest, reference) {
@@ -180,10 +181,16 @@ $('#generate-results').click(function(event){
 	var value = parseInt(this.noUiSlider.get());
 	results[category] = {'value': value, 'label': category_label};
 
-	var min_country = _.min(_.pairs(countries[category]),
-				function(p) { return p[1] })[0];
-	var max_country = _.max(_.pairs(countries[category]),
-				function(p) { return p[1] })[0];
+	var min_value = _.min(_.values(countries[category]));
+	var min_countries = _.filter(
+	    _.keys(countries[category]), function(c) {
+		return countries[category][c] === min_value; });
+	
+	var max_value = _.max(_.values(countries[category]));
+	var max_countries = _.filter(
+	    _.keys(countries[category]), function(c) {
+		return countries[category][c] === max_value; });
+
 	var closest_country = _.min(_.pairs(countries[category]),
 				    function(p) {
 					return Math.pow(p[1] - value, 2);
@@ -192,28 +199,36 @@ $('#generate-results').click(function(event){
 	var category_highlights = [
 	    {'name': 'Minnst',
 	     'class': 'min',
-	     'country': min_country,
-	     'value': countries[category][min_country]
+	     'key': min_countries[0],
+	     'country': _.map(min_countries, function(c) {
+		 console.log(country_names[c].icelandic);
+		 return country_names[c].icelandic; }).join('/'),
+	     'value': min_value
 	    },
 	    {'name': 'Þitt svar',
 	     'class': 'you',
+	     'key': 'you',
 	     'country': undefined,
 	     'value': value
 	    },
 	    {'name': 'Líkast þér',
 	     'class': 'closest',
-	     'country': closest_country,
+	     'key': closest_country,
+	     'country': country_names[closest_country].icelandic,
 	     'value': countries[category][closest_country]
 	    },
-	    {'name': 'Ísland',
+	    {'name': country_names['iceland'].icelandic,
 	     'class': 'iceland',
-	     'country': 'iceland',
+	     'key': 'iceland',
+	     'country': country_names['iceland'].icelandic,
 	     'value': countries[category]['iceland']
 	    },
 	    {'name': 'Mest',
 	     'class': 'max',
-	     'country': max_country,
-	     'value': countries[category][max_country]
+	     'key': max_countries[0],
+	     'country': _.map(max_countries, function(c) {
+		 return country_names[c].icelandic; }).join('/'),
+	     'value': max_value
 	    }
 	];
 
