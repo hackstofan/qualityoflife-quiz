@@ -10,12 +10,12 @@
 	{
 	    "name": "government",
 	    "short": "Stjórnsýsla",
-	    "text": "Hversu mikið traust berðu til stjórnmálafólks á Íslandi?"
+	    "text": "Hversu mikið traust berðu til íslenskrar stjórnsýslu?"
 	},
 	{
 	    "name": "environment",
 	    "short": "Umhverfi",
-	    "text": "Hversu ánægð(ur) ertu með útivistar og frístundasvæði í nágrenni við heimili þitt?"
+	    "text": "Hversu ánægð(ur) ertu með útivistar- og frístundasvæði í nágrenni við heimili þitt?"
 	},
 	{
 	    "name": "finance",
