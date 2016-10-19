@@ -4,25 +4,25 @@
     
     {% for question in questions %}
     <div class="row">
-      <div data-category="{{ question.name }}" class="category col-sm-12 col-lg-2 col- text-center">
+      <div data-category="{{ question.name }}" class="category col-xs-12 col-md-2 col- text-center">
 	<h3>{{ question.short }}</h3>
       </div>
-      <div class="question col-sm-12 col-lg-10">
+      <div class="question col-xs-12 col-lg-10">
 	<p class="text">{{ question.text }}</p>
 	<div class="row">
-	  <div class="col-sm-1 text-right">Minnst</div>
-	  <div class="col-sm-10">
+	  <div class="hidden-xs visible-sm col-sm-1 text-right">Minnst</div>
+	  <div class="col-xs-12 col-sm-12">
 	    <div data-label="{{ question.short }}" data-category="{{ question.name }}" class="answer"></div>
 	  </div>
-	  <div class="col-sm-1 text-left">Mest</div>
+	  <div class="hidden-xs visible-sm col-sm-1 text-left">Mest</div>
 	</div>
       </div>
     </div>
-    <hr/>
+    <hr style="margin-top:50px;"/>
     {% endfor %}
 
     <div class="row">
-      <div class="col-sm-12 text-center">
+      <div class="col-xs-12 text-center">
 	<button id="generate-results" class="btn btn-primary btn-lg">
 	  Sjá niðurstöður
 	</button>

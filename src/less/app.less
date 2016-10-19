@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+@screen-xs-max: 767px;
+@screen-sm-min: 768px;
+@screen-sm-max: 991px;
+@screen-md-min: 992px;
+@screen-md-max: 1199px;
+@screen-lg-min: 1200px;
+
 @light-gray: #fdfdfd;
 @dark-gray: #222222;
 
@@ -91,9 +98,7 @@ html, body, main {
     }
 }
 
-.question {
-    height: 144px;
-    
+.question {    
     >.text {
         font-size: 28px;
     }
@@ -102,6 +107,9 @@ html, body, main {
 .answer {
     .noUi-value {
         padding-top: 2px;
+    }
+   .noUi-target {
+        padding-bottom: 50px;
     }
     .noUi-connect {
         background: none;
@@ -124,28 +132,39 @@ html, body, main {
 
 #welcome {
     position: relative;
-    background: url('../img/europe_2560x1440.jpg');
     color: @light-gray;
 
     .esd {
         position: absolute;
-	top: 10px;
+        top: 10px;
 	left: 10px;
         display: inline-block;
         width: 200px;
 	height: 152px;
-	background: url('../img/ESD_logo_sml_transp_is.png');
+        background: url('../img/ESD_logo_sml_transp_is.png');
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
 	color: transparent;
     }
 
     .hagstofa {
         position: absolute;
-	top: 10px;
+        top: 10px;
 	right: 10px;
         display: inline-block;
         width: 200px;
 	height: 77px;
 	background: url('../img/hagstofa.png');
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
 	color: transparent;
     }
 
@@ -159,7 +178,6 @@ html, body, main {
 	    text-transform: uppercase;
 	    text-shadow: 2px 2px lighten(@dark-gray, 10%);
     	    font-weight: bold;
-    	    font-size: 82px;
         }
 
 	p {
@@ -170,7 +188,96 @@ html, body, main {
    }
 }
 
-#questions, #categories, #average {
+@media (max-width: @screen-xs-max) {
+    #welcome {
+        background: rgb(94, 156, 207);
+
+        .esd {
+	    height: 100px;
+	}
+	
+        .hagstofa {
+            width: 100px;
+            height: 100px;
+	}
+	
+	h1 {
+	   font-size: 32px;
+	}
+    }
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    #welcome {
+        background: url('../img/europe_1280x1024.jpg');
+
+        .esd {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .hagstofa {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+	
+	h1 {
+	   font-size: 42px;
+	}
+    }
+
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    #welcome {
+        background: url('../img/europe_2560x1440.jpg');
+
+        .esd {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .hagstofa {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+	
+	h1 {
+	   font-size: 64px;
+	}
+	
+        a.btn {
+            font-size: 32px;
+	}
+    }
+
+}
+@media (min-width: @screen-lg-min) {
+    #welcome {
+        background: url('../img/europe_2560x1440.jpg');
+
+        .esd {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .hagstofa {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+	
+	h1 {
+	   font-size: 82px;
+	}
+	
+        a.btn {
+            font-size: 32px;
+	}
+    }
+}
+
+#questions, #categories, #mainresult, #average {
     background: #fff;
 
     h2 {
@@ -181,9 +288,11 @@ html, body, main {
     }
 }
 
-#categories, #average {
+#categories, #mainresult, #average {
     display: none;
+}
 
+#categories, #average {
     .category-result {
         &> p {
 	  font-size: 122%;
