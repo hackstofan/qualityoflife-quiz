@@ -7,13 +7,14 @@
       {% for question in group %}
       <div data-category="{{ question.name }}" class="category-result col-sm-12 col-lg-6">
 	<h3>{{ question.short }}</h3>
-	<p>Þú metur {{ question.short|lower }} líkt og íbúar
-	    <strong class="country-appendix">á Íslandi</strong>.
+	<p>
+	  {{ question.results}}
+	  líkt og íbúar
+	  <strong class="country-appendix">á Íslandi</strong>.
 	  </p>
 	<div class="category-viz"></div>
 	<div class="category-analysis">
-	  <p><strong>Ísland</strong> er stórasta land í heimi.</p>
-	  <p>Í þessum flokki er <strong>Ísland</strong> betra en meðaltal Evrópusambandsins.</p>
+	  <p>{{ question.description }}</p>
 	</div>
       </div>
       {% endfor %}

@@ -5,52 +5,72 @@
 	{
 	    "name": "safety",
 	    "short": "Öryggi",
-	    "text": "Hversu örugg(ur) ertu þegar þú gengur ein(n) að nóttu til í hverfinu þínu?"
+	    "text": "Hversu örugg(ur) ertu þegar þú gengur ein(n) að nóttu til í hverfinu þínu?",
+	    "results": "Þú metur öryggi þitt",
+	    "description": "Hlutfall þeirra sem upplifa sig mjög örugg á gangi ein í myrkri er 46% á Íslandi sem er frekar hátt í evrópskum samanburði en meðaltalið innan Evrópusambandsins er 28%. Mest öryggi upplifa íbúar Möltu en 66% maltverskra svarenda telja sig mjög örugg við þessar aðstæður á meðan það gera aðeins 10% í Litháen."
 	},
 	{
 	    "name": "government",
 	    "short": "Réttarkerfi",
-	    "text": "Hversu mikið traust berðu til íslensks réttarkerfis?"
+	    "text": "Hversu mikið traust berðu til íslensks réttarkerfis?",
+	    "results": "Þú metur réttarkerfið",
+	    "description": "Íslendingar bera meira traust til réttarkerfisins en Evrópubúar gera að meðaltali og gefa trausti til kerfisins að meðaltali 5,7  af tíu mögulegum en Evrópubúar 4,6. Danir bera mest traust til réttarkerfisins með meðaltalið 7,5 en Slóvenar minnst, með meðaltalið 2,7."
 	},
 	{
 	    "name": "environment",
 	    "short": "Umhverfi",
-	    "text": "Hversu ánægð(ur) ertu með útivistar- og frístundasvæði í nágrenni við heimili þitt?"
+	    "text": "Hversu ánægð(ur) ertu með útivistar- og frístundasvæði í nágrenni við heimili þitt?",
+	    "results": "Þú metur umhverfi",
+	    "description": "Ánægja með nánasta umhverfi er 7,5 á Ísland af tíu mögulegum sem er aðeins yfir meðaltali Evrópusambandsins (7,3). Mest er ánægjan í Austurríki (8,4) en minnst í Búlgaríu (5,2)."
 	},
 	{
 	    "name": "finance",
 	    "short": "Fjármál",
-	    "text": "Hversu ánægð(ur) ertu með fjárhag heimilisins?"
+	    "text": "Hversu ánægð(ur) ertu með fjárhag heimilisins?",
+	    "results": "Þú metur fjármál",
+	    "description": "Íslendingar gefa að jafnaði ánægju með fjárhag heimilisins einkunnina 6,4 af tíu mögulegum, sem er hærra en meðaltalið innan Evrópusambandsins (6,0) en töluvert lægra en í Danmörku og Svíþjóð þar sem ánægjan með fjárhaginn er hvað mest (7,6). Minnst er ánægjan með fjárhaginn í Búlgaríu þar sem meðaltalið er 3,7."
 	},
 	{
 	    "name": "housing",
 	    "short": "Húsnæði",
-	    "text": "Hversu ánægð(ur) ertu með húsnæði þitt?"
+	    "text": "Hversu ánægð(ur) ertu með húsnæði þitt?",
+	    "results": "Þú metur húsnæði",
+	    "description": "Íslendingar gefa ánægju með eigin húsnæði að meðaltali 8,1 af tíu mögulegum sem er nokkuð hærra en meðaltalið í Evrópu (7,5). Mest er ánægja með eigin húsnæði í Danmörku, Finnlandi og Sviss (8,4) og minnst í Búlgaríu (6,0)."
 	},
 	{
 	    "name": "job",
 	    "short": "Atvinna",
-	    "text": "Hversu ánægð(ur) ertu með núverandi aðalstarf þitt?"
+	    "text": "Hversu ánægð(ur) ertu með núverandi aðalstarf þitt?",
+	    "results": "Þú metur atvinnu",
+	    "description": "Starfsánægja fær meðaleinkunnina 8 af tíu mögulegum á Íslandi. Þetta er töluvert hærra en í Evrópusambandinu almennt þar sem meðalstarfsánægja er 7,1. Starfsánægjan er eilítið hærri í Danmörku og Finnlandi (8,1) þar sem hún reynist mest en minnst í Búlgaríu (6,0)."
 	},
 	{
 	    "name": "time",
 	    "short": "Tímanotkun",
-	    "text": "Hversu vel finnst þér þú nýta tíma þinn?"
+	    "text": "Hversu vel finnst þér þú nýta tíma þinn?",
+	    "results": "Þú metur tímanotkun",
+	    "description": "Íslendingar eru nokkuð ánægðir með það hvernig þeir verja tíma sínum og gáfu tímanotkun sinni að meðaltali 7,4 af tíu mögulegum. Meðaltalið innan Evrópusambandsins er 6,7. Mest er ánægjan með tímanotkunina í Danmörku 7,8, og minnst í Búlgaríu 5,7."
 	},
 	{
 	    "name": "health",
 	    "short": "Heilsa",
-	    "text": "Hversu góða telur þú heilsu þína vera?"
+	    "text": "Hversu góða telur þú heilsu þína vera?",
+	    "results": "Þú metur heilsu",
+	    "description": "Þegar fólk metur sjálft heilsufar sitt er hátt hlutfall Íslendinga við góða heilsu,  76%, sem er nokkuð hærra en meðaltalið í Evrópu (68%). Best er heilsufar íbúa á Írlandi en 83% telja sig við góða heilsu þar á meðan það á aðeins við um 45% Litháa."
 	},
 	{
 	    "name": "social",
 	    "short": "Tengsl",
-	    "text": "Hversu ánægð(ur) ertu með tengsl þín við annað fólk?"
+	    "text": "Hversu ánægð(ur) ertu með tengsl þín við annað fólk?",
+	    "results": "Þú metur félagsleg tengsl",
+	    "description": "Ánægja með félagsleg tengsl fékk meðaleinkunnina 8,1 á Íslandi af tíu mögulegum. Þetta er hærra en meðaltalið fyrir Evrópusambandið í heild (7,8) en nokkuð lægra en í Sviss þar sem hún er mest (8,7). Minnst er ánægjan með félagsleg tengsl meðal íbúa Búlgaríu (5,7)."
 	},
 	{
 	    "name": "life",
 	    "short": "Lífið",
-	    "text": "Hversu ánægð(ur) ertu með lífið almennt?"
+	    "text": "Hversu ánægð(ur) ertu með lífið almennt?",
+	    "results": "Þú metur ánægju með lífið",
+	    "description": "Íslendingar gáfu ánægju með lífið einkunnina 7,9 sem er töluvert hærra en meðaltalið innan Evrópusambandsins (7,1). Lífsánægjan er þó meiri í Danmörku, Finnlandi, Svíþjóð og Sviss þar sem meðaltalið er 8. Minnst er lífsánægjan í Búlgaríu, 4,8."
 	}
     ]
 }
