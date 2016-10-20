@@ -323,6 +323,10 @@ main {
   padding-bottom: 50px;
   text-align: center;
 }
+#questions hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 #categories,
 #mainresult,
 #average {
@@ -596,11 +600,15 @@ main {
   background-position: center center;
   background-size: contain;
 }
+#mainresult h2 {
+  padding-bottom: 20px;
+}
 #mainresult .country-appendix {
   font-weight: bold;
 }
 #social {
   min-height: 20px;
+  padding-bottom: 20px;
 }
 #social .fb-share-button span {
   vertical-align: baseline !important;
