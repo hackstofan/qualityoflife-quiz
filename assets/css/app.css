@@ -185,22 +185,6 @@ main {
   position: relative;
   color: #fdfdfd;
 }
-#welcome .esd {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: inline-block;
-  width: 200px;
-  height: 152px;
-  background: url('../img/ESD_logo_sml_transp_is.png');
-  background-size: contain;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
-  color: transparent;
-}
 #welcome .hagstofa {
   position: absolute;
   top: 10px;
@@ -237,9 +221,6 @@ main {
   #welcome {
     background: #5e9ccf;
   }
-  #welcome .esd {
-    height: 100px;
-  }
   #welcome .hagstofa {
     width: 100px;
     height: 100px;
@@ -251,11 +232,6 @@ main {
 @media (min-width: 768px) and (max-width: 991px) {
   #welcome {
     background: url('../img/europe_1280x1024.jpg');
-  }
-  #welcome .esd {
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
   #welcome .hagstofa {
     position: absolute;
@@ -269,11 +245,6 @@ main {
 @media (min-width: 992px) and (max-width: 1199px) {
   #welcome {
     background: url('../img/europe_2560x1440.jpg');
-  }
-  #welcome .esd {
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
   #welcome .hagstofa {
     position: absolute;
@@ -290,11 +261,6 @@ main {
 @media (min-width: 1200px) {
   #welcome {
     background: url('../img/europe_2560x1440.jpg');
-  }
-  #welcome .esd {
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
   #welcome .hagstofa {
     position: absolute;
